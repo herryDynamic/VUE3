@@ -2,8 +2,8 @@
   "name": "vue3_vite_1118",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "test": "vite",
+    "dev": "vite --mode development",
+    "test": "vite --mode pro",
     "build-dev": " vite build",
     "build-prd": "vite build",
     "lint": "lint-staged ."
