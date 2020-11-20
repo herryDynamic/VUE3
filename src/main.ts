@@ -12,7 +12,7 @@ import store from "./store/index";
 const add = process.env
 
 add.VITE_APP_NAME = import.meta.env.VITE_APP_NAME
-console.log(add.VITE_APP_NAME);
+// console.log(add.VITE_APP_NAME);
 
 
 // console.log(add.indexOf("HUANGBIAO123") );
