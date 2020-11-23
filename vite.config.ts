@@ -11,13 +11,10 @@ const envFiles = [
 //   }
 // }
 
-console.log(process.env);
-
-
 module.exports = {
   alias: {},
-  // hostname: import.met.env.VITE_HOST,
-  // port: import.met.env.VITE_PORT,
+  // hostname: import.meta.env.VITE_HOST,
+  // port: import.meta.env.VITE_PORT,
   // 是否自动在浏览器打开
   open: true,
   // 是否开启 https
@@ -34,7 +31,9 @@ module.exports = {
    * directory exists, it will be removed before the build.
    * @default 'dist'
    */
-  // outDir: import.met.env.VITE_OUTPUT_DIR,
+  // outDir: import.meta.env.VITE_OUTPUT_DIR,\
+  outDir: process.env.VITE_APP_OUTDIR,
+
   // 反向代理
   proxy: {
     api: {
