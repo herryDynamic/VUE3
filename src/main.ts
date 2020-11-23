@@ -17,15 +17,10 @@ import './utils/http/http'
 
 import api from  './api/api'
 
-
-// vue.prototype.$api = api;
-
-add.VITE_APP_NAME = import.meta.env.VITE_APP_NAME
-// console.log(add.VITE_APP_NAME);
-
-
-// console.log(add.indexOf("HUANGBIAO123") );
+import installElementPlus from "./plugins/element-plus";
 
 
 
-createApp(App).use(router).use(store).mount("#app");
+
+
+createApp(App).use(router).use(store).use(installElementPlus).mount("#app");

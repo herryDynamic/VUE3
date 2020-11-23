@@ -32,7 +32,7 @@ module.exports = {
    * @default 'dist'
    */
   // outDir: import.meta.env.VITE_OUTPUT_DIR,\
-  outDir: process.env.VITE_APP_OUTDIR,
+  // outDir: process.env.VITE_APP_OUTDIR,
 
   // 反向代理
   proxy: {
