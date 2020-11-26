@@ -10,7 +10,7 @@ const envFiles = [
 //     // process.env[k] = envConfig[k];
 //   }
 // }
-
+const debug = process.env.NODE_ENV !== "production";
 module.exports = {
   alias: {},
   // hostname: import.meta.env.VITE_HOST,
@@ -34,12 +34,14 @@ module.exports = {
   // outDir: import.meta.env.VITE_OUTPUT_DIR,\
   // outDir: process.env.VITE_APP_OUTDIR,
 
+
+
   // 反向代理
   proxy: {
     api: {
       target: "http://www.skillnull.com",
       changeOrigin: true,
-      rewrite: (path) => path.replace(/^\/api/, ""),
+      rewrite: (path: string) => path.replace(/^\/api/, ""),
     },
   },
 };

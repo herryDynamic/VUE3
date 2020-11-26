@@ -5,7 +5,7 @@ const router = createRouter({
   history: createWebHashHistory(),
   routes: [
     {
-      path: "/",
+      path: "/herry",
       name: "herry",
       component: () => import("../views/herry_projects/herry_yzl.vue"),
     },
@@ -13,6 +13,11 @@ const router = createRouter({
       path: "/home",
       name: "home",
       component: () => import("../views/home/index.vue"),
+    },
+    {
+      path: "/",
+      name: "websocketTest",
+      component: () => import("../views/herry/websocketTest.vue"),
     },
   ],
 });
